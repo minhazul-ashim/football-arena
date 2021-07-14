@@ -146,6 +146,16 @@ header {
     transform: scale(1.2);
 }
 
+.player-card:hover .player-name {
+
+    color: var(--secondaryColor);
+    transform: rotate(360deg);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
 .player-image {
 
     overflow: hidden;
@@ -168,6 +178,7 @@ header {
 
     padding: 5% 0;
     color: var(--primaryColor);
+    transition: all 0.5s;
 }
 
 
