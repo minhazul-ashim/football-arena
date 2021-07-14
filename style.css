@@ -291,7 +291,6 @@ header {
     grid-column-gap: 1%;
     grid-column-gap: 1%;
     padding: 1%;
-    height: 70vh;
     margin-top: 5%;
 }
 
@@ -339,6 +338,7 @@ header {
     display: flex;
     flex-direction: column;
     overflow: scroll;
+    height: 60vh;
     overflow-x: hidden;
 }
 
@@ -389,7 +389,6 @@ header {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 4%;
 }
 
 .hunt-form {
@@ -598,7 +597,6 @@ footer {
 
         display: flex;
         flex-direction: column;
-        height: auto;
     }
 
     .previous-news {
@@ -672,9 +670,9 @@ footer {
         font-size: 1em
     }
 
-    .news {
+    .previous-news {
 
-        height: 75vh;
+        height: 60vh;
     }
 
     .news-title h1{
