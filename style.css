@@ -1,0 +1,635 @@
+/* Font Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+/* Utility Class and Setups */
+
+*{
+
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+
+    width: 75%;
+    height: 100%;
+}
+
+:root {
+
+    --primaryColor: #5903f8;
+    --secondaryColor: #ff006a;
+}
+
+section {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* TOP BANNER STYLING */
+
+header {
+
+    background: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+}
+
+.top-banner-container {
+
+    display: flex;
+
+}
+
+.top-banner-container:hover .football-image {
+
+    animation: football 2s ease-out infinite;
+}
+
+.top-banner-title {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-banner-title h2{
+
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 3%;
+}
+
+.top-banner-title a {
+
+    text-decoration: none;
+    background: var(--secondaryColor);
+    width: 40%;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    font-weight: 700;
+    color: white;
+    transition: 0.5s;
+}
+
+.top-banner-title a:hover {
+
+    background: #89df59;
+    color: #444;
+    transform: scale(0.8);
+}
+
+.football-image {
+
+    width: 7%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+
+}
+
+.top-banner-image {
+
+    width: 50%;
+    padding-left: 5%;
+}
+
+.top-banner-image img {
+
+    width: 100%;
+}
+
+
+
+/* Player Cards Styles */
+
+#players {
+
+    margin-top: 4%;
+}
+
+.all-players {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2%;
+    grid-row-gap: 1%;
+    margin-bottom: 5%;
+    place-items: center;
+}
+
+.player-card {
+
+    padding: 5%;
+    border: 1px solid #999;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgb(177, 172, 172);
+}
+
+.player-card:hover .player-image img {
+
+    transform: scale(1.2);
+}
+
+.player-image {
+
+    overflow: hidden;
+   
+}
+
+.player-image img {
+
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.player-details {
+
+    text-align: justify;
+}
+
+.player-name {
+
+    padding: 5% 0;
+    color: var(--primaryColor);
+}
+
+
+
+/* Highlights Section Styles */
+
+
+#highlights {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.highlights-container {
+
+    display: flex;
+}
+
+
+.highlights-image {
+
+    width: 50%;
+
+}
+
+.highlights-image img {
+
+    width: 100%;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.highlights-info {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+   
+}
+
+.highlights-info h1 {
+
+    padding: 7% 0;
+    color: var(--secondaryColor);
+    font-size: 1.7rem;
+}
+
+.highlights-info p {
+
+    font-size: 1.2em;
+}
+
+.highlights-info a {
+
+    text-decoration: none;
+    display: inline-block;
+    margin: 5% 0;
+    background: var(--secondaryColor);
+    width: 130px;
+    display: inline;
+    padding: 7px 15px 7px 20px;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.5s;
+
+}   
+
+.highlights-info a:hover {
+
+    background: #89df59;
+    transform: scale(0.9);
+    color: black;
+}
+
+
+/* Fooball News Section Styles */
+
+
+.news-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.news-title {
+
+    text-align: center;
+    width: 80%;
+}
+
+.news-title h1{
+
+    font-size: 2em;
+    padding: 3% 0;
+    background: linear-gradient(to right, rgb(247, 132, 0), rgb(250, 7, 48));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.news {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1%;
+    grid-column-gap: 1%;
+    padding: 1%;
+    height: 50vh;
+    margin-top: 5%;
+}
+
+.hot-news {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hot-news-image {
+
+    width: 100%;
+}
+
+.hot-news-image img{
+
+    width: 100%;
+}
+
+.news-detail {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.news-heading {
+
+    font-size: 1rem;
+}
+
+.news-link {
+
+    text-decoration: none;
+    font-size: 0.8em;
+    color: var(--secondaryColor);
+}
+
+.news-time {
+
+    font-size: 0.6em;
+}
+
+.previous-news {
+
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.news-box{
+
+    display: flex;
+}
+
+
+.previous-news-detail {
+
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(194, 187, 187);
+    padding-bottom: 2%;
+}
+
+.previous-news-detail  h4 {
+
+    font-size: 1.2em;
+}
+
+
+/* Talent Hunt Program Styles */
+
+
+.talent-hunt-container {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 0;
+    text-align: center;
+}
+
+.talent-hunt-container h1 {
+
+    margin-bottom: 3%;
+    font-size: 2em;
+    padding: 3% 0;
+    background: linear-gradient(to right, rgb(247, 132, 0), rgb(250, 7, 48));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.talent-hunt-program {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 4%;
+}
+
+.hunt-form {
+
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.ins-thumbnail img {
+
+    width: 100%;
+}
+
+.hunt-form input {
+
+    padding: 6% 10%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border: 1px solid rgb(197, 193, 193);
+}
+
+.hunt-form input[type='file'] {
+
+    padding: 0;
+}
+
+.hunt-form input[type='submit'] {
+
+    margin-top: 5%;
+    border: 0;
+    padding: 5% 20%;
+    background: var(--secondaryColor);
+    color: white;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+
+.hunt-form p {
+
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.hunt-form label {
+
+    display: block;
+}
+
+.hunt-form fieldset {
+
+    width: 40%;
+}
+
+
+
+/* Footer Styles */
+
+
+footer {
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container img{
+
+    width: 40%;
+}
+
+.social-icons {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.social-icons a {
+
+    padding: 15px;
+    background: rgb(223, 221, 221);
+    margin: 1%;
+    border-radius: 50px;
+    color: var(--primaryColor);
+}
+
+.footer-container span {
+
+    color: #333;
+}
+
+
+
+ 
+/* Media Queries */
+
+@media (max-width:688px) {
+
+
+    .all-players {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 2%;
+        grid-row-gap: 0.2%;
+    }
+    
+    .player-card {
+
+        width: 60%;
+    }
+
+    #highlights {
+
+        margin-top: 20%;
+    }
+
+    .highlights-container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+
+    .highlights-info {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+        width: 80%;
+    }
+
+    .highlights-image {
+
+        width: 80%;
+    }
+
+    .highlights-info h1{
+
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    .highlights-info p {
+
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .highlights-info a {
+
+        font-size: 1em
+    }
+
+    .news-title h1{
+
+        font-size: 1.5em;
+        padding: 3% 0;
+        
+    }
+
+    .talent-hunt-container h1 {
+
+        font-size: 1.5em;
+        padding: 3% 0;
+    }
+
+    .talent-hunt-program {
+
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media (min-width: 689px) and (max-width: 991px) {
+
+
+    .all-players {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2%;
+        grid-row-gap: 0.4%;
+    }
+    
+
+    .highlights-info h1{
+
+        font-size: 1.5em;
+        padding: 5% 0;
+    }
+
+    .highlights-info p {
+
+        font-size: 1em;
+        padding: 2%;
+    }
+
+    .highlights-info a {
+
+        font-size: 1em
+    }
+
+    .news-title h1{
+
+        font-size: 1.7em;
+        padding: 3% 0;
+        
+    }
+}
+
+
+
+
+
+
+/* Animation keyframes */
+
+@keyframes football {
+
+    0% {
+
+        left: 1%;
+        top: 0;
+        opacity: 0;
+    }
+
+    50% {
+        left: 50%;
+        top: 100px;
+        opacity: 1;
+    }
+
+
+    100% {
+        left:0;
+        top:200px;
+        opacity: 0.7;
+    }
+}
